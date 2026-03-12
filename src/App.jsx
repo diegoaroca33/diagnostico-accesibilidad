@@ -331,7 +331,9 @@ export default function App(){
           </div>
         </div>
       )}
-      {mode==="form"&&<FormView onSubmit={save}/>}
       {mode==="dash"&&auth&&<DashView entries={entries} onExport={doExport}/>}
+      <div style={{textAlign:"center",padding:"20px 12px 12px",borderTop:"1px solid "+BORDER,marginTop:20}}>
+        <div style={{fontSize:10,color:TXT2,opacity:0.6}}>v1.0 · © 2026 Diego Aroca · Consejería de Educación y FP · Región de Murcia</div>
+      </div>
     </div>);
 }
